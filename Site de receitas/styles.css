@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilo básico */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    align-items: left;
+    gap: 2rem;
+    background-image: linear-gradient(#aa5baa67, #23215275), url(morango.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* Container de colunas */
+.column-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo dos parágrafos */
+.column-container p {
+    flex: 1 1 calc(33.333% - 20px); /* Três colunas */
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Lobster', cursive; /* Aplicando fonte personalizada */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .column-container p {
+        flex: 1 1 calc(50% - 20px); /* Duas colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .column-container p {
+        flex: 1 1 100%; /* Uma coluna em telas pequenas */
+    }
+}

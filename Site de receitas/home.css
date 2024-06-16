@@ -1,0 +1,33 @@
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    align-items: left;
+    gap: 2rem;
+    background-image: linear-gradient(#aa5baa67, #23215275), url(morango.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header h4{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+header h1{
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4.2rem;
+    background: linear-gradient(45deg, var(--secondary-color), var(--tertiary-color));
+    background-clip: text;
+    color: transparent;
+    background-size: 70%;
+}
+
+header p{
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
